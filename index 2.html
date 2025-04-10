@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClearWire AV | Modern AV & Network Installations</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f8f9fa; color: #222; }
+    header, footer { background-color: #0f172a; color: white; padding: 20px 40px; text-align: center; }
+    nav { background: #1e293b; padding: 10px 40px; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; }
+    nav a:hover { text-decoration: underline; }
+    .hero { padding: 80px 40px; text-align: center; background: linear-gradient(to right, #3b82f6, #06b6d4); color: white; }
+    .hero h1 { font-size: 3em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em; margin-bottom: 20px; }
+    .btn { background: white; color: #1e40af; padding: 12px 24px; border-radius: 8px; font-weight: bold; text-decoration: none; }
+    .btn:hover { background: #f1f5f9; }
+    .section { padding: 60px 40px; max-width: 1100px; margin: auto; text-align: center; }
+    .section h2 { font-size: 2em; margin-bottom: 20px; }
+    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; }
+    .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 300px; }
+    .card img { width: 100%; border-radius: 10px; height: 180px; object-fit: cover; }
+    .card h3 { margin: 15px 0 10px; color: #1e3a8a; }
+    .card p { font-size: 0.95em; color: #555; }
+    .quote-form { display: none; padding: 40px; background: #f1f5f9; border-top: 4px solid #3b82f6; }
+    iframe { border: none; width: 100%; height: 1000px; }
+    .show { display: block; animation: fadeIn 0.5s ease-in; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ClearWire AV</h1>
+    <p>Clean. Professional. Smart Installations.</p>
+  </header>
+  <nav>
+    <div><strong>ClearWire AV</strong></div>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#contact" onclick="toggleForm()">Free Quote</a>
+    </div>
+  </nav>
+  <div class="hero">
+  <div style="background: #fef9c3; color: #92400e; padding: 10px 20px; border-left: 5px solid #f59e0b; margin-bottom: 20px; text-align:center; font-weight: 500;">
+    <strong>Note:</strong> All installations require pre-roughed-in wiring. We specialize in clean finishing.
+  </div>
+    <h1>AV & Network Solutions Made Easy</h1>
+    <p>Serving Vancouver & Burnaby — From TV Mounting to Full Home Networks</p>
+    <a class="btn" href="#contact" onclick="toggleForm()">Get a Free Quote</a>
+  </div>
+
+  <section class="section" id="services">
+    <h2>What We Do</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1615986209224-2d89d07a45d0?auto=format&fit=crop&w=800&q=60" alt="UniFi">
+        <h3>UniFi Access Points</h3>
+        <p>Seamless Wi-Fi throughout your home or office with professional ceiling-mounted UniFi installs.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1613090787887-5f4b018b98be?auto=format&fit=crop&w=800&q=60" alt="Rack">
+        <h3>Network Rack Setup</h3>
+        <p>Clean, labeled, optimized — full network rack solutions with PoE switches and patch panels.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1622435225527-bcb91c8ec8fd?auto=format&fit=crop&w=800&q=60" alt="Home Theater">
+        <h3>Home Theater Install</h3>
+        <p>Mounting, cabling, calibration — we turn your space into a true cinema experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="quote-form">
+    <h2 style="text-align:center;">Request a Free Quote</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe0-zRNRoKcsJEfNwlrlGbFrVs_htA4n1MIIp67-W23WU1BFA/viewform?embedded=true"></iframe>
+  </section>
+
+  <footer>
+    <p>Call or Text: (236) 591-8444 | Email: clearwireav@gmail.com</p>
+    <p>Copyright &copy; 2025 ClearWire AV</p>
+  </footer>
+
+  <script>
+    function toggleForm() {
+      document.querySelector('.quote-form').classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
